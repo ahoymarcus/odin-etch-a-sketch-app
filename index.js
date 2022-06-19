@@ -54,8 +54,8 @@ function setPaintingJob()  {
         div.addEventListener('mouseenter', (e) => {
             console.log(e);
         
-            //e.target.style.backgroundColor = 'red';
-            e.target.classList.add('active');
+            //e.target.classList.add('active');
+            e.target.style.backgroundColor = 'red';
         });
         
         // Removing the paint

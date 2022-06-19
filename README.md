@@ -8,7 +8,7 @@ This is the fourth project from The Odin Project and the second one from the Jav
 <br />
 
 
-- [my online webpage]()
+- [my online webpage](https://ahoymarcus.github.io/odin-etch-a-sketch-app/)
 
 
 <br />
@@ -24,27 +24,20 @@ Dependências:
 <br />
 
 
-### Imagem da tela inicial do jogo:
+### Imagem da tela do jogo com valor de grid inicial:
 
-![Imagem da tela inicial do jogo](/public/images/)
-
-
-<br />
-
-
-### Imagem do jogo:
-
-![Imagem do jogo](/public/images/)
+![Imagem da tela do jogo com valor de grid inicial](/public/images/Etch-a-Sketch-app-01.png)
 
 
 <br />
 
 
-### Imagem da tela do jogo em dispositivo pequeno:
+### Imagem da tela do jogo com novo valor de grid:
 
-![Imagem da tela do jogo em dispositivo pequeno](/public/images/)
+![Imagem da tela do jogo com novo valor de grid](/public/images/Etch-a-Sketch-app-02.png)
 
 
+<br />
 
 
 
