@@ -59,9 +59,9 @@ function setPaintingJob()  {
         });
         
         // Removing the paint
-        //div.addEventListener('mouseleave', (e) => {
-        //    e.target.classList.remove('active');
-        //});
+        div.addEventListener('click', (e) => {
+            e.target.style.backgroundColor =  '#7373c6';
+        });
     });
 }
 
