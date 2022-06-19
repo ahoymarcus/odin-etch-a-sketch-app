@@ -7,8 +7,16 @@ const gameContainer = document.querySelector('.game-container');
 const btnGrid = document.getElementById('clean-grid');
 
 btnGrid.addEventListener('click', () => {
-    gridSize = prompt('Choose a size for the new grid!\n\n The Sky is the limit... up to a 100...\n\n Sorry!!! ;-)\n');
+    gridSize = prompt('Choose a size for the new grid!\n\n The Sky is the limit... up to 50...\n\n Sorry!!! :-)\n');
+    
+    while (gridSize < 1 || gridSize > 50) {
+        gridSize = prompt("Man, what about 0 to a 50! Seriously! ;-)\n");
+    }
     console.log(gridSize);
+    
+    removeGrid();
+    
+    gameContainer.style.width = `${gridSize * 30}px`;
     
     createGrid(gridSize);
 });
@@ -27,6 +35,13 @@ function createGrid(size) {
     }
     
     setPaintingJob();
+}
+
+
+function removeGrid() {
+    while (gameContainer.hasChildNodes()) {
+        gameContainer.removeChild(gameContainer.firstChild);
+    }
 }
 
 
