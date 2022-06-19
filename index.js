@@ -2,6 +2,7 @@ let gridSize = 16;
 const gameContainer = document.querySelector('.game-container');
 
 
+
 // Change the grid
 const btnGrid = document.getElementById('clean-grid');
 
@@ -24,29 +25,31 @@ function createGrid(size) {
             gameContainer.appendChild(div);
         }
     }
+    
+    setPaintingJob();
 }
 
 
-
-
-// Set trailing hover effect
-const divsGrid = document.querySelectorAll('.grid');
-//console.log(divsGrid);
-
-
-divsGrid.forEach(div => {
-    div.addEventListener('mouseenter', (e) => {
-        console.log(e);
+function setPaintingJob()  {
+    const divsGrid = document.querySelectorAll('.grid');
+    console.log(divsGrid);
     
-        //e.target.style.backgroundColor = 'red';
-        e.target.classList.add('active');
+    // Set trailing hover effect
+    divsGrid.forEach(div => {
+        div.addEventListener('mouseenter', (e) => {
+            console.log(e);
+        
+            //e.target.style.backgroundColor = 'red';
+            e.target.classList.add('active');
+        });
+        
+        // Removing the paint
+        //div.addEventListener('mouseleave', (e) => {
+        //    e.target.classList.remove('active');
+        //});
     });
-    
-    // Removing the paint
-    //div.addEventListener('mouseleave', (e) => {
-    //    e.target.classList.remove('active');
-    //});
-});
+}
+
 
 
 
