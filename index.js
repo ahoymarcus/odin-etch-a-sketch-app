@@ -1,21 +1,31 @@
-//const divsArr = [];
-
+let gridSize = 16;
 const gameContainer = document.querySelector('.game-container');
 
 
-// create 16 divs and append them
-for (let i = 0; i < 16; i += 1) {
-    for (let j = 0; j < 16; j += 1){
-        let div = document.createElement('div');
-        div.setAttribute('id', `grid${i}`);
-        div.setAttribute('class', 'grid')
-        
-        //divsArr.push(div);
-        //console.log(div);
-        
-        gameContainer.appendChild(div);
+// Change the grid
+const btnGrid = document.getElementById('clean-grid');
+
+btnGrid.addEventListener('click', () => {
+    gridSize = prompt('Choose a size for the new grid!\n\n The Sky is the limit... up to a 100...\n\n Sorry!!! ;-)\n');
+    console.log(gridSize);
+    
+    createGrid(gridSize);
+});
+
+
+
+function createGrid(size) {
+    // create grid with x divs and append them
+    for (let i = 0; i < gridSize; i += 1) {
+        for (let j = 0; j < gridSize; j += 1){
+            let div = document.createElement('div');
+            div.setAttribute('id', `grid${i}`);
+            div.setAttribute('class', 'grid')
+            gameContainer.appendChild(div);
+        }
     }
 }
+
 
 
 
@@ -32,13 +42,14 @@ divsGrid.forEach(div => {
         e.target.classList.add('active');
     });
     
-    div.addEventListener('mouseleave', (e) => {
-        e.target.classList.remove('active');
-    });
+    // Removing the paint
+    //div.addEventListener('mouseleave', (e) => {
+    //    e.target.classList.remove('active');
+    //});
 });
 
 
 
-
+createGrid(16);
 
 

@@ -2,9 +2,42 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #e6e6a3; /*#fdfdcc;*/
+}
+
+header {
+    color: #4c4460;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.title {
+    font-size: 2.8rem;
+}
+
+.title-span {
+    color: red;
+}
+
+.btn-grid {
+    color: #f21a1a;
+    background-color: #aaaac8;
+    border: 4px dashed yellow;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    
+    margin: 20px 10px;
+    padding: 16px;
+    cursor: pointer;
+}
 
 .game-container {
     width: 480px;
+    margin: auto;
 }
 
 .grid {
