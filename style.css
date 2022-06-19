@@ -1,5 +1,11 @@
+* {
+    box-sizing: border-box;
+}
 
 
+.game-container {
+    width: 480px;
+}
 
 .grid {
     background-color: #7373c6;
